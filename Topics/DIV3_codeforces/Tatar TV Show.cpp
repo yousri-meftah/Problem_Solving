@@ -13,7 +13,7 @@ void solve() {
     for(int i =0;i<n;i++){
         int start= i;
         int next = i+k;
-        while(next<n){
+        if(next<n){
             if(s[start]=='1'){
                 s[start]='0';
                 if(s[next]=='1')s[next]='0';
